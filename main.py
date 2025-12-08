@@ -1,115 +1,223 @@
-# класс нужен просто для удобства обращения, написан криво и архитектурно неправильно
-
 import requests
-from bs4 import BeautifulSoup
 import re
-
-class Parser:
-    def __init__(self, url):
-        self.url = url
-
-    @staticmethod
-    def parse_line(line: str) -> dict:
-        """Разбирает строчку на части"""
-        if len(line) < 5:
-            return {'product': '', 'price': '', 'flag': ''}
-        
-        line = line.strip()
-
-        price_match = re.search(r'-?\d{1,}\.?\d*/?\d*\*?$', line)
-        if price_match:
-            price = price_match.group(0)
-            line = line[:price_match.start()].strip()
-        else:
-            price = ''
-
-        flag_match = re.search(r'[a-z]{2}', line)
-
-        if flag_match:
-            flag = flag_match.group(0)
-            line = line.replace(flag, '').strip()
-        else:
-            flag = ''
-        
-        product = line.strip()
-        
-        return {
-            'product': product,
-            'price': price.replace('*', ''),
-            'flag': '',  # Флаг будет добавлен отдельно
-        }
+from bs4 import BeautifulSoup
+from dataclasses import dataclass
+from typing import Optional, List
+import json
+from json import JSONDecodeError
+from g_sheets import GoogleSheetsClient
 
 
-    def get_page(self) -> str | None:
-        """Вытаскивает HTML-код страницы"""
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        }
+LINK = 'https://t.me/BigSaleApple/11193?embed=1'
+FILENAME = LINK.split('?')[0].split('/')[-1] + '.json'
+SHEET_NAME = 'Huawei'
+
+class IOFile:
+    def __init__(self, filename):
+        self.filename = filename
+        self.data = [{}]
+    
+    def read_file(self):
         try:
-            response = requests.get(self.url, headers=headers)
+            with open(self.filename, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (FileNotFoundError, JSONDecodeError):
+            print('Ошибка файла')
+            return [{}]
+        
+    def write_file(self, data: list[dict]):
+        with open(self.filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+    
 
+# --- 1. Структура данных (Data Layer) ---
+@dataclass
+class Product:
+    name: str
+    price: int
+    flag: str
+    comment: str
+
+    def __str__(self):
+        """Красивый вывод для консоли"""
+        return f"{self.flag:<5} | {self.name[:40]:<40} | {self.price:<8} | {self.comment}"
+
+# --- 2. Работа с сетью (Network Layer) ---
+class TelegramClient:
+    def __init__(self, user_agent: str = 'Mozilla/5.0'):
+        self.headers = {'User-Agent': user_agent}
+
+    def fetch_html(self, url: str) -> Optional[str]:
+        try:
+            response = requests.get(url, headers=self.headers)
+            response.encoding = 'utf-8'  # Критично для эмодзи
             if response.status_code == 200:
                 return response.text
-            else:
-                print(f'Ошибка: {response.status_code}')
-                return None
-
-        except requests.exceptions.RequestException as e:
-            print(e)
-            return None
-        
-    @staticmethod
-    def extract_text(html: str) -> str | None:
-        """Вытаскивает текст из нужной части страницы"""
-        soup = BeautifulSoup(html, 'lxml')
-
-        message = soup.find('div', class_='tgme_widget_message_text')
-        if message:
-            return message.get_text(separator='\n', strip=True)
+            print(f"Ошибка сервера: {response.status_code}")
+        except requests.RequestException as e:
+            print(f"Ошибка сети: {e}")
         return None
 
-def handle_dict(raw_dict: dict) -> dict:
-    """Обрабатывает сырой словарь для вывода цены в нормальном виде"""
-    clear_dict = {}
+# --- 3. Обработка текста (Processing Layer) ---
+class TextExtractor:
+    @staticmethod
+    def html_to_text(html: str) -> Optional[str]:
+        """Извлекает текст из виджета, сохраняя структуру строк."""
+        soup = BeautifulSoup(html, 'lxml')
+        div = soup.find('div', class_='tgme_widget_message_text')
+        
+        if not div:
+            return None
+            
+        # Заменяем <br> на переносы для корректного сплита
+        for br in div.find_all('br'):
+            br.replace_with('\n')
+            
+        return div.get_text(separator='\n', strip=True)
 
-    for key, value in raw_dict.items():
-        if key == 'price' and value:
-            price_digits = ''.join(char for char in value if char.isdigit())
-            clear_dict[key] = int(price_digits) if price_digits else 0
+    @staticmethod
+    def convert_emoji_to_latin(text: str) -> str:
+        """Превращает Unicode-флаг (🇦🇪) в код (AE)."""
+        match = re.search(r'[\U0001F1E6-\U0001F1FF]{2}', text)
+        if match:
+            flag_char = match.group(0)
+            # Магия Unicode: ord(char) - offset = ASCII char
+            return "".join(flag_char)
+        return ""
+
+# --- 4. Бизнес-логика парсинга (Logic Layer) ---
+class PriceParser:
+    def parse(self, raw_text: str) -> List[Product]:
+        lines = raw_text.split('\n')
+        products = []
+        pending_flag = ""  # Буфер для флага с предыдущей строки
+
+        for line in lines:
+            line = line.strip()
+            if not line: continue
+
+            price_data = self._extract_price(line)
+
+            if price_data:
+                # Это строка с товаром
+                price, name_part, comment_part = price_data
+                
+                # Определяем флаг
+                flag = self._resolve_flag(name_part, comment_part, pending_flag)
+                
+                # Очищаем части от флагов и мусора
+                name_clean = self._clean_text(name_part)
+                comment_clean = self._clean_text(comment_part).lstrip('*)').strip()
+
+                products.append(Product(
+                    name=name_clean,
+                    price=price,
+                    flag=flag,
+                    comment=comment_clean
+                ))
+                
+                # Сбрасываем буфер, так как использовали флаг
+                pending_flag = "" 
+            else:
+                # Это строка без цены (возможно, просто флаг)
+                found_flag = TextExtractor.convert_emoji_to_latin(line)
+                if found_flag and len(line) < 10:
+                    pending_flag = found_flag
+
+        return products
+
+    def _extract_price(self, line: str) -> Optional[tuple]:
+        """Ищет цену и делит строку. Возвращает (price, name, comment) или None."""
+        clean_line = line.replace('*', '')
+        # Регулярка для цены > 500, исключая даты и 4/128
+        matches = list(re.finditer(r'(?<!/)\b(\d{1,3}(?:[., ]\d{3})*|\d{4,})\b', clean_line))
+        
+        if not matches:
+            return None
+
+        # Берем последнее валидное число
+        for m in reversed(matches):
+            val_str = re.sub(r'[^\d]', '', m.group(1))
+            val = int(val_str)
+            
+            if 500 < val < 2000000:
+                price_str = m.group(1)
+                # Делим строку
+                price_idx = line.rfind(price_str)
+                if price_idx != -1:
+                    name = line[:price_idx].strip()
+                    comment = line[price_idx + len(price_str):].strip()
+                    return val, name, comment
+        return None
+
+    def _resolve_flag(self, name: str, comment: str, pending: str) -> str:
+        """Определяет флаг из буфера или текста."""
+        if pending:
+            return pending
+            
+        # Ищем в имени
+        flag = TextExtractor.convert_emoji_to_latin(name)
+        if flag: return flag
+        
+        # Ищем в комментарии
+        flag = TextExtractor.convert_emoji_to_latin(comment)
+        if flag: return flag
+        
+        return ""
+
+    def _clean_text(self, text: str) -> str:
+        """Удаляет эмодзи флагов и лишние символы."""
+        # Удаляем Unicode-флаги
+        text = re.sub(r'[\U0001F1E6-\U0001F1FF]{2}', '', text)
+        # Удаляем дефисы на концах
+        if text.strip().endswith('-'):
+            return text.strip()[:-1].strip()
+        return text.strip()
+
+# --- 5. Точка входа (Application Layer) ---
+class App:
+    def __init__(self, url: str, google_sheet_name: str = None):
+        self.url = url
+        self.client = TelegramClient()
+        self.extractor = TextExtractor()
+        self.parser = PriceParser()
+
+        self.gs_client = None
+        if google_sheet_name:
+            self.gs_client = GoogleSheetsClient('credentials.json', google_sheet_name)
+
+    def run(self):
+        print(f"Запуск парсера для {self.url}...")
+        
+        html = self.client.fetch_html(self.url)
+        if not html:
+            return
+
+        text = self.extractor.html_to_text(html)
+        if not text:
+            print("Не удалось извлечь текст.")
+            return
+
+        products = self.parser.parse(text)
+        datafile = IOFile(FILENAME)
+        data = [
+            {
+                'name': product.name,
+                'price': product.price,
+                'flag': product.flag,
+                'comment': product.comment
+            }
+            for product in products
+            ]
+        datafile.write_file(data)
+
+        if self.gs_client:
+                print("Начинаем экспорт в Google Sheets...")
+                self.gs_client.connect()
+                self.gs_client.update_data(products)
         else:
-            clear_dict[key] = value
-
-    return clear_dict
-
-def main():
-    """Точка входа в программу"""
-    url = 'https://t.me/BigSaleApple/11198?embed=1'
-    parser = Parser(url)
-
-    print('Получаем HTML')
-    html = parser.get_page()
-
-    if html:
-        print('HTML получен')
-        print('Извлекаем текст')
-        text = parser.extract_text(html).split('\n')
-
-        if text:
-            print('Текст извлечен')
-
-            for line in text:
-                parsed_line = parser.parse_line(line)
-                if parsed_line:
-                    res = handle_dict(parsed_line)
-
-                    for key, value in res.items():
-                        result = f'{key}: {value}' if value else ''
-                        print(result, end='\t')
-                    print()
-        else:
-            print('Текст не найден')
-    else:
-        print('HTML не получен')
+            print("Товары не найдены.")
 
 if __name__ == '__main__':
-    main()
+    app = App(LINK, google_sheet_name=SHEET_NAME)
+    app.run()

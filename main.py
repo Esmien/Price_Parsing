@@ -22,6 +22,14 @@ class Parser:
             line = line[:price_match.start()].strip()
         else:
             price = ''
+
+        flag_match = re.search(r'[a-z]{2}', line)
+
+        if flag_match:
+            flag = flag_match.group(0)
+            line = line.replace(flag, '').strip()
+        else:
+            flag = ''
         
         product = line.strip()
         

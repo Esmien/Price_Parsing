@@ -2,55 +2,57 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-def parse_line(line):
-    if len(line) < 5:
-        return {'product': '', 'price': '', 'flag': ''}
+class Parser:
+    def __init__(self, url):
+        self.url = url
 
-    price_match = re.search(r'-?\d{1,}\.?\d*/?\d*\*?$', line)
-    if price_match:
-        price = price_match.group(0)
-        # Удаляем цену из строки
-        line = line[:price_match.start()].strip()
-    else:
-        price = ''
-
-    flag_match = re.search(r'[🇦-🇿]{2}', line)
-
-    if flag_match:
-        flag = flag_match.group(0)
-        # Удаляем флаг из строки
-        line = line.replace(flag, '').strip()
-    else:
-        flag = ''
-    product = line.strip()
-    return {
-        'product': product,
-        'price': price.replace('*', ''),
-        'flag': flag,
-    }
-
-def get_page(url):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-    }
-    try:
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            return response.text
+    @staticmethod
+    def parse_line(line):
+        if len(line) < 5:
+            return {'product': '', 'price': '', 'flag': ''}
+        
+        line = line.strip()
+        
+        # Цена всегда в конце
+        price_match = re.search(r'-?\d{1,}\.?\d*/?\d*\*?$', line)
+        if price_match:
+            price = price_match.group(0)
+            line = line[:price_match.start()].strip()
         else:
-            print(f'Ошибка: {response.status_code}')
+            price = ''
+        
+        product = line.strip()
+        
+        return {
+            'product': product,
+            'price': price.replace('*', ''),
+            'flag': '',  # Флаг будет добавлен отдельно
+        }
+
+
+    def get_page(self):
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        try:
+            response = requests.get(self.url, headers=headers)
+            if response.status_code == 200:
+                return response.text
+            else:
+                print(f'Ошибка: {response.status_code}')
+                return None
+        except requests.exceptions.RequestException as e:
+            print(e)
             return None
-    except requests.exceptions.RequestException as e:
-        print(e)
+        
+    @staticmethod
+    def extract_text(html):
+        soup = BeautifulSoup(html, 'lxml')
+
+        message = soup.find('div', class_='tgme_widget_message_text')
+        if message:
+            return message.get_text(separator='\n', strip=True)
         return None
-
-def extract_text(html):
-    soup = BeautifulSoup(html, 'lxml')
-
-    message = soup.find('div', class_='tgme_widget_message_text')
-    if message:
-        return message.get_text(separator='\n', strip=True)
-    return None
 
 def handle_dict(raw_dict):
     #ToDo заебашить нормальную обработку
@@ -69,16 +71,17 @@ def handle_dict(raw_dict):
 
 def main():
     url = 'https://t.me/BigSaleApple/11198?embed=1'
+    parser = Parser(url)
     print('Получаем HTML')
-    html = get_page(url)
+    html = parser.get_page()
     if html:
         print('HTML получен')
         print('Извлекаем текст')
-        text = extract_text(html).split('\n')
+        text = parser.extract_text(html).split('\n')
         if text:
             print('Текст извлечен')
             for line in text:
-                parsed_line = parse_line(line)
+                parsed_line = parser.parse_line(line)
                 if parsed_line:
                     res = handle_dict(parsed_line)
                     for key, value in res.items():

@@ -110,7 +110,7 @@ class PriceParser:
                     return val, line[:price_idx].strip(), line[price_idx + len(price_str):].strip()
         return None
 
-    def _resolve_flag(self, name: str, comment: str, pending: str) -> str: # как работает этот метод - я не понял
+    def _resolve_flag(self, name: str, comment: str, pending: str) -> str:
         if pending: return pending # если флаг в памяти, то оставляем его
         
         f = TextExtractor.convert_emoji_to_latin(name) # ищем флаг в имени

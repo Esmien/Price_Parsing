@@ -1,55 +1,65 @@
 import re
 from bs4 import BeautifulSoup
-from typing import List, Optional, Tuple
+
 from models import Product
 
 class TextExtractor:
     """Отвечает за очистку HTML и превращение его в текст"""
     
     @staticmethod
-    def html_to_text(html: str) -> Optional[str]:
-        soup = BeautifulSoup(html, 'lxml')
-        div = soup.find('div', class_='tgme_widget_message_text')
+    def html_to_text(html: str) -> str | None:
+        """
+        Вытаскивает из HTML весь нужный текст построчно
         
-        if not div:
+        :param html: html-код в одну строку
+        :return: искомый текст построчно
+        """
+        soup = BeautifulSoup(html, 'lxml') # создает объект, который в себе хранит структурное представление html-страницы
+        div = soup.find('div', class_='tgme_widget_message_text') # ищет текст в блоках div class tgme_...
+        
+        if not div: # если нет div - сорян, не сегодня
             return None
             
         # Заменяем <br> на переносы строк
-        for br in div.find_all('br'):
-            br.replace_with('\n')
+        for br in div.find_all('br'): # ищет ВСЕ br(вариант \n на языке хтмл)
+            br.replace_with('\n') # ну собственно замена
             
-        return div.get_text(separator='\n', strip=True)
+        return div.get_text(separator='\n', strip=True) # возвращает текст построчно, так, как он был на странице, уже без тегов
 
     @staticmethod
     def convert_emoji_to_latin(text: str) -> str:
-        """Ищет флаг-эмодзи и возвращает его (или код страны)"""
+        """
+        Ищет флаг-эмодзи и возвращает его
+        """
         # Ищем Unicode-флаги (например 🇦🇪)
-        match = re.search(r'[\U0001F1E6-\U0001F1FF]{2}', text)
-        if match:
-            flag_char = match.group(0)
-            # В данном случае возвращаем сам эмодзи, так красивее в таблице.
-            # Если нужны буквы (AE), раскомментируй строку ниже:
-            # return "".join([chr(ord(c) - 127397) for c in flag_char])
+        match = re.search(r'[\U0001F1E6-\U0001F1FF]{2}', text) # ищет часть строки text длинной 2 символа, которые в этом страшном диапазоне кода utf-8
+        if match: # если нашел
+            flag_char = match.group(0) # записываем все, что нашел, как флаг
             return flag_char
-        return ""
+        return "" # если не нашел, то пустая строка
 
 class PriceParser:
     """Бизнес-логика: превращает текст в список товаров"""
     
-    def parse(self, raw_text: str) -> List[Product]:
-        lines = raw_text.split('\n')
-        products = []
+    def parse(self, raw_text: str) -> list[Product]:
+        """
+        Построчно обрабатывает текст, проверяя на валидность каждую строчку        
+        :param raw_text: 'грязный' текст, с ненужными символами и неоднородный
+        :return: список 'чистых' записей для дальнейшей работы(название, цена, флаг, комментарий) в виде экземпляра датакласса
+        """
+        lines = raw_text.split('\n') # собираем строки в список. 1 строка - 1 элемент списка
+        products = [] # объявляем список объектов датакласса(чистых записей)
         pending_flag = "" # Буфер для флага с предыдущей строки
 
         for line in lines:
             line = line.strip()
             if not line: continue
 
-            price_data = self._extract_price(line)
+            price_data = self._extract_price(line) # кортеж вида цена, имя, коммент. Либо None, если строка не подходит
 
-            if price_data:
+            if price_data: # если все таки подошло
                 # Нашли строку с ценой -> это товар
-                price, name_part, comment_part = price_data
+                price, name_part, comment_part = price_data # распаковываем этот кортеж в переменные
                 
                 # Определяем флаг (из буфера или из строки)
                 flag = self._resolve_flag(name_part, comment_part, pending_flag)
@@ -58,7 +68,7 @@ class PriceParser:
                 name_clean = self._clean_text(name_part)
                 comment_clean = self._clean_text(comment_part).lstrip('*)').strip()
 
-                products.append(Product(
+                products.append(Product( # добавляем готовую, чистую запись в список как экземпляр датакласса с указанными атрибутами
                     name=name_clean,
                     price=price,
                     flag=flag,
@@ -76,16 +86,19 @@ class PriceParser:
 
         return products
 
-    def _extract_price(self, line: str) -> Optional[Tuple[int, str, str]]:
-        """Возвращает (цена, имя, коммент) или None"""
-        clean_line = line.replace('*', '')
+    def _extract_price(self, line: str) -> tuple[int, str, str] | None:
+        """
+        Возвращает (цена, имя, коммент) или None
+        :param line: 'грязная' строка
+        """
+        clean_line = line.replace('*', '') # удаляет все звездочки в строке
         # Ищем цены > 500, исключаем 4/128
-        matches = list(re.finditer(r'(?<!/)\b(\d{1,3}(?:[., ]\d{3})*|\d{4,})\b', clean_line))
+        matches = list(re.finditer(r'(?<!/)\b(\d{1,3}(?:[., ]\d{3})*|\d{4,})\b', clean_line)) # магия regex, в списковом представлении
         
         if not matches: return None
 
         # Берем последнее валидное число
-        for m in reversed(matches):
+        for m in reversed(matches): # опять магия
             val_str = re.sub(r'[^\d]', '', m.group(1))
             val = int(val_str)
             
@@ -97,20 +110,20 @@ class PriceParser:
                     return val, line[:price_idx].strip(), line[price_idx + len(price_str):].strip()
         return None
 
-    def _resolve_flag(self, name: str, comment: str, pending: str) -> str:
-        if pending: return pending
+    def _resolve_flag(self, name: str, comment: str, pending: str) -> str: # как работает этот метод - я не понял
+        if pending: return pending # если флаг в памяти, то оставляем его
         
-        f = TextExtractor.convert_emoji_to_latin(name)
-        if f: return f
+        f = TextExtractor.convert_emoji_to_latin(name) # ищем флаг в имени
+        if f: return f 
         
-        f = TextExtractor.convert_emoji_to_latin(comment)
-        if f: return f
+        f = TextExtractor.convert_emoji_to_latin(comment) # ищем флаг в комментарии
+        if f: return f 
         
-        return ""
+        return "" # если нигде нет, то пустая строка
 
     def _clean_text(self, text: str) -> str:
-        # Удаляем флаги из текста, чтобы не дублировались
-        text = re.sub(r'[\U0001F1E6-\U0001F1FF]{2}', '', text)
-        if text.strip().endswith('-'):
-            return text.strip()[:-1].strip()
+        text = re.sub(r'[\U0001F1E6-\U0001F1FF]{2}', '', text) # Удаляем флаги из текста, чтобы не дублировались
+
+        if text.strip().endswith('-'): # если последний символ -
+            return text.strip()[:-1].strip() # удаляет его и пробелы с переносами вокруг
         return text.strip()

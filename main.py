@@ -88,9 +88,6 @@ def main():
                         result = f'{key}: {value}' if value else ''
                         print(result, end='\t')
                     print()
-            print("=" * 50)
-            # print(text)
-            print("=" * 50)
         else:
             print('Текст не найден')
     else:

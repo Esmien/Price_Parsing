@@ -1,6 +1,5 @@
 import requests
 import gspread
-from typing import Optional
 from gspread.exceptions import WorksheetNotFound
 from config import USER_AGENT
 from models import Product
@@ -10,7 +9,7 @@ class TelegramClient:
     def __init__(self):
         self.headers = {'User-Agent': USER_AGENT} # инициализирует типа браузер
 
-    def fetch_html(self, url: str) -> Optional[str]: 
+    def fetch_html(self, url: str) -> str | None: 
         try:
             response = requests.get(url, headers=self.headers) # пытается получить html-страницу, прикинувшись браузером
             # Принудительно ставим UTF-8 для эмодзи

@@ -39,11 +39,13 @@ class Parser:
         }
         try:
             response = requests.get(self.url, headers=headers)
+
             if response.status_code == 200:
                 return response.text
             else:
                 print(f'Ошибка: {response.status_code}')
                 return None
+
         except requests.exceptions.RequestException as e:
             print(e)
             return None
@@ -61,6 +63,7 @@ class Parser:
 def handle_dict(raw_dict: dict) -> dict:
     """Обрабатывает сырой словарь для вывода цены в нормальном виде"""
     clear_dict = {}
+
     for key, value in raw_dict.items():
         if key == 'price' and value:
             price_digits = ''.join(char for char in value if char.isdigit())
@@ -74,18 +77,23 @@ def main():
     """Точка входа в программу"""
     url = 'https://t.me/BigSaleApple/11198?embed=1'
     parser = Parser(url)
+
     print('Получаем HTML')
     html = parser.get_page()
+
     if html:
         print('HTML получен')
         print('Извлекаем текст')
         text = parser.extract_text(html).split('\n')
+
         if text:
             print('Текст извлечен')
+
             for line in text:
                 parsed_line = parser.parse_line(line)
                 if parsed_line:
                     res = handle_dict(parsed_line)
+
                     for key, value in res.items():
                         result = f'{key}: {value}' if value else ''
                         print(result, end='\t')

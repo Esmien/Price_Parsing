@@ -1,0 +1,2426 @@
+[
+  {
+    "name": "+3 месяца",
+    "price": 3000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 6000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 9000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w DEPPO",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "25w DEPPO",
+    "price": 2000,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "33w DEPPO",
+    "price": 2200,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "13 Mini",
+    "price": 512,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "Pink",
+    "price": 67000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "13 128 Blue",
+    "price": 38000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "13 128 Midnight",
+    "price": 37000,
+    "flag": "🇳🇪",
+    "comment": ""
+  },
+  {
+    "name": "13 128 Starlight",
+    "price": 37000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "13 512 Starlight",
+    "price": 56000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "13 512 Pink",
+    "price": 56000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "+3 месяца",
+    "price": 3000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 6000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 9000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w DEPPO",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "25w DEPPO",
+    "price": 2000,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "33w DEPPO",
+    "price": 2200,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 14128,
+    "flag": "🇪🇺",
+    "comment": "/ 256 /512"
+  },
+  {
+    "name": "14 128 Midnight",
+    "price": 39200,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "14 128 Blue",
+    "price": 38300,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "14 128 Starlight",
+    "price": 40700,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "14 128 Starlight",
+    "price": 40500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "14 128 Yellow",
+    "price": 38700,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "14 128 Purple",
+    "price": 40000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "14 128 Red",
+    "price": 40800,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "14 256 Midnight",
+    "price": 50500,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "14 256 Blue",
+    "price": 50500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "14 256 Purple",
+    "price": 49800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 14256,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 47800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "14 256 Yellow",
+    "price": 43500,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "14 256 Blue",
+    "price": 47300,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 256 Purple",
+    "price": 47800,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "14 512 Yellow",
+    "price": 51600,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 128 Midnight",
+    "price": 44000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 128 Yellow",
+    "price": 44000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 128 Red",
+    "price": 44000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 128 Blue",
+    "price": 53000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 128 Purple",
+    "price": 49700,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 128 Purple",
+    "price": 50000,
+    "flag": "🇨🇦",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 256 Midnight",
+    "price": 62000,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 256 Midnight",
+    "price": 53200,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 256 Midnight",
+    "price": 58000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 256 Blue",
+    "price": 59000,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 256 Purple",
+    "price": 59000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 256 Yellow",
+    "price": 55000,
+    "flag": "🇦🇷",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 512 Midnight",
+    "price": 63000,
+    "flag": "🇦🇷",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 512 Starlight",
+    "price": 63000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 512 Blue",
+    "price": 63000,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "14 Plus 512 Purple",
+    "price": 60500,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 128 Purple",
+    "price": 61000,
+    "flag": "🇦🇷",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 128 Gold",
+    "price": 61000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 128 Silver",
+    "price": 61000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 128 Black",
+    "price": 61000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 256 Purple",
+    "price": 69000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 256 Gold",
+    "price": 69000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 256 Silver",
+    "price": 69000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 256 Black",
+    "price": 68000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 512 Black",
+    "price": 75000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 512 Purple",
+    "price": 75000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 512 Gold",
+    "price": 75000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 512 Silver",
+    "price": 75000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 1TB Purple",
+    "price": 81000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 1TB Black",
+    "price": 81000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 1TB Silver",
+    "price": 81000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro 1TB Gold",
+    "price": 81000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "14 Pro Max 128 Black",
+    "price": 58000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "+3 месяца",
+    "price": 3000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 6000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 10000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w DEPPO",
+    "price": 9000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "25w DEPPO",
+    "price": 1500,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "33w DEPPO",
+    "price": 1800,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (1м) 25w",
+    "price": 4500,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (2м) 25w",
+    "price": 5500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 15128,
+    "flag": "",
+    "comment": "/ 256 /512"
+  },
+  {
+    "name": "15 128 Black",
+    "price": 46800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "15 128 Black",
+    "price": 42500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 128 Pink",
+    "price": 46800,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "15 128 Pink",
+    "price": 42500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 128 Green",
+    "price": 47500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "15 128 Blue",
+    "price": 46800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 256 Black",
+    "price": 57800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 256 Pink",
+    "price": 58800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 256 Blue",
+    "price": 57700,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 256 Blue",
+    "price": 53000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 256 Green",
+    "price": 58600,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "15 256 Yellow ASIS",
+    "price": 54500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 512 Blue",
+    "price": 68200,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "15 512 Green",
+    "price": 65200,
+    "flag": "🇨🇦",
+    "comment": ""
+  },
+  {
+    "name": "15 512 Pink",
+    "price": 68200,
+    "flag": "🇨🇦",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 128 Green",
+    "price": 51200,
+    "flag": "🇨🇦",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 128 Green",
+    "price": 47000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 128 Blue",
+    "price": 49700,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 128 Yellow",
+    "price": 51700,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 128 Black",
+    "price": 51900,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 128 Black",
+    "price": 45000,
+    "flag": "🇮🇳",
+    "comment": "(замена дисплея в СЦ)"
+  },
+  {
+    "name": "15 Plus 256 Black",
+    "price": 67300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 256 Blue",
+    "price": 62000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 256 Yellow",
+    "price": 58000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 256 Pink",
+    "price": 65600,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 512 Black",
+    "price": 65000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 512 Blue",
+    "price": 65000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 512 Green",
+    "price": 62800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 512 Pink",
+    "price": 73300,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "15 Plus 512 Yellow",
+    "price": 71400,
+    "flag": "🇧🇷",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro Max 256/",
+    "price": 512,
+    "flag": "🇧🇷",
+    "comment": "/ 1TB"
+  },
+  {
+    "name": "Pro 128 Blue",
+    "price": 62000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "15 PRO 128 BLUE",
+    "price": 78000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "15 PRO 128 WHITE",
+    "price": 78000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "ACTIVE",
+    "price": 103000,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro 1Tb Black",
+    "price": 105000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro 1Tb White",
+    "price": 105000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro 1Tb Blue",
+    "price": 105000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro 1Tb Natural",
+    "price": 105000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro Max 256 Black",
+    "price": 84000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro Max 256 Blue",
+    "price": 84000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro Max 512 White",
+    "price": 104500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "15 Pro Max",
+    "price": 512,
+    "flag": "🇰🇷",
+    "comment": ""
+  },
+  {
+    "name": "Natural",
+    "price": 91500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 66000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 50000,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "+3 месяца",
+    "price": 3000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 6000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 10000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Dual USB -C Port 35W",
+    "price": 6500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w DEPPO",
+    "price": 900,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "25w DEPPO",
+    "price": 1500,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "33w DEPPO",
+    "price": 1800,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (1м) 25w",
+    "price": 4500,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "25w",
+    "price": 5500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Pitaka",
+    "price": 5000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "IPHONE",
+    "price": 16128,
+    "flag": "",
+    "comment": "/256/512"
+  },
+  {
+    "name": "16E 128 White",
+    "price": 42500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "16E 256 Black",
+    "price": 54700,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16E 256 Black (ACT Ориг. упаковка)",
+    "price": 50000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16E 256 White",
+    "price": 54700,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16E 256 White (ACT Ориг. упаковка)",
+    "price": 50000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16E 256 White",
+    "price": 52000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16E 512 White",
+    "price": 56000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16E 512 Black",
+    "price": 56500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16E",
+    "price": 512,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "Black",
+    "price": 55500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Teal",
+    "price": 51400,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Teal",
+    "price": 50000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 128 White",
+    "price": 52900,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Black",
+    "price": 53000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Black",
+    "price": 52000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Pink",
+    "price": 51500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Pink",
+    "price": 50000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Ultramarine",
+    "price": 53700,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 128 Ultramarine",
+    "price": 50000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 256 Black",
+    "price": 67000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 256 White",
+    "price": 67000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 256 Teal",
+    "price": 68000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 256 Ultramarine",
+    "price": 67000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 256 Pink",
+    "price": 67000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 512 White",
+    "price": 89000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 512 Ultramarine",
+    "price": 76500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 512 Ultramarine",
+    "price": 74300,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 16512,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "Pink",
+    "price": 74300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "16 512 Teal",
+    "price": 76500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 512 Black",
+    "price": 76500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 128 Ultramarine",
+    "price": 58000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 plus 128 Black",
+    "price": 62500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 plus 128 Black",
+    "price": 57000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 plus 128 Black",
+    "price": 52500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 128 White",
+    "price": 58000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 128 Pink",
+    "price": 61000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 256 Black",
+    "price": 76500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 256 Ultramarine",
+    "price": 78800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 256 Teal",
+    "price": 75900,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 256 White",
+    "price": 78000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 256 Pink",
+    "price": 76500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 512 Pink",
+    "price": 80200,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 512 Teal",
+    "price": 80200,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 512 Ultramarine",
+    "price": 80200,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Plus 512 White",
+    "price": 80200,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "+3 месяца",
+    "price": 3000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 6000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 10000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Dual USB -C Port 35W",
+    "price": 6900,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w DEPPO",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "25w DEPPO",
+    "price": 1600,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "33w DEPPO",
+    "price": 2300,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (1м) 25w",
+    "price": 4500,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (2м) 25w",
+    "price": 5500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Pitaka",
+    "price": 5500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 128 Natural",
+    "price": 70500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 Natural",
+    "price": 78000,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 Natural",
+    "price": 74500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 Desert",
+    "price": 81700,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 Desert",
+    "price": 73500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 Desert",
+    "price": 74000,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 Desert",
+    "price": 72000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 White",
+    "price": 78000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 White",
+    "price": 73500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 White",
+    "price": 70900,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 128 Black",
+    "price": 71000,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 128 Black",
+    "price": 74000,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 128 Black",
+    "price": 71000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 256 Natural",
+    "price": 96300,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 256 Desert",
+    "price": 93900,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 256 White",
+    "price": 96000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 256 Black",
+    "price": 96500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 256 Black",
+    "price": 85500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 512 Desert",
+    "price": 88500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 1Tb Natural",
+    "price": 120500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 1Tb Natural",
+    "price": 109000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 1Tb Desert",
+    "price": 119500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 1Tb Desert",
+    "price": 123400,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 1Tb Desert",
+    "price": 109000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 1Tb White",
+    "price": 124000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 1Tb White",
+    "price": 109000,
+    "flag": "🇦🇪",
+    "comment": ""
+  },
+  {
+    "name": "16 Prо 1Tb Black",
+    "price": 109000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 1Tb Black",
+    "price": 110000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Black",
+    "price": 96200,
+    "flag": "🇰🇷",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Black",
+    "price": 94300,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Black",
+    "price": 88500,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Black",
+    "price": 83500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Black",
+    "price": 87000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 White",
+    "price": 96000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 White",
+    "price": 96000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 White",
+    "price": 91000,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Natural",
+    "price": 97900,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Natural",
+    "price": 95000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Natural",
+    "price": 91000,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Natural",
+    "price": 87700,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Desert",
+    "price": 91200,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Desert",
+    "price": 89000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 256 Desert",
+    "price": 82700,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Black",
+    "price": 115000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Black",
+    "price": 106000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Black",
+    "price": 101000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Black",
+    "price": 99300,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 White",
+    "price": 108000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 White",
+    "price": 100000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Natural",
+    "price": 115000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Natural",
+    "price": 108000,
+    "flag": "🇰🇼",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Desert",
+    "price": 107000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Desert",
+    "price": 100500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Desert",
+    "price": 99500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 512 Desert",
+    "price": 95000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1Tb Black",
+    "price": 136000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1Tb Black",
+    "price": 116500,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1TB Black",
+    "price": 111000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1TB Desert",
+    "price": 123300,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1TB Desert",
+    "price": 116500,
+    "flag": "🇰🇼",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1TB Desert",
+    "price": 112000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1TB Natural",
+    "price": 133500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "Natural",
+    "price": 119500,
+    "flag": "🇰🇼",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro Max 1TB White",
+    "price": 119500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "16 Pro 512 Desert",
+    "price": 92000,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 86000,
+    "flag": "🇯🇵",
+    "comment": "(Б/У 91% АКБ)"
+  },
+  {
+    "name": "+3 месяца",
+    "price": 3000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 6000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 10000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Dual USB -C Port 35W",
+    "price": 6900,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (1м) 25w",
+    "price": 4500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (2м) 25w",
+    "price": 5500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 20500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "17 256 Black",
+    "price": 73700,
+    "flag": "🇰🇼",
+    "comment": ""
+  },
+  {
+    "name": "17 256 Blue",
+    "price": 69800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "17 256 Blue",
+    "price": 68200,
+    "flag": "🇮🇳",
+    "comment": "eSim"
+  },
+  {
+    "name": "17 256 White",
+    "price": 73000,
+    "flag": "🇺🇸",
+    "comment": "(1 sim+e sim )"
+  },
+  {
+    "name": "17 256 White",
+    "price": 67000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "17 256 Sage",
+    "price": 74000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 256 Sage",
+    "price": 69800,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "17 256 Lavender",
+    "price": 73900,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 256 Lavender",
+    "price": 69800,
+    "flag": "🇮🇳",
+    "comment": "eSim"
+  },
+  {
+    "name": "17 512 White",
+    "price": 96500,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "17 512 White",
+    "price": 89500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "17 512 Sage",
+    "price": 99000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 512 Blue",
+    "price": 99000,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 17512,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 86500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "17 512 Lavender",
+    "price": 99000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 512 Lavender",
+    "price": 91500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "17 512 Black",
+    "price": 98000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 512 Black",
+    "price": 88500,
+    "flag": "🇮🇳",
+    "comment": ""
+  },
+  {
+    "name": "17 512 Black",
+    "price": 85500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "+3 месяца",
+    "price": 3000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 6000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 10000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Dual USB -C Port 35W",
+    "price": 7000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (1м) 25w",
+    "price": 4500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (2м) 25w",
+    "price": 5500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 20500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Apple Battery для iPhone Air",
+    "price": 12000,
+    "flag": "🇰🇼",
+    "comment": ""
+  },
+  {
+    "name": "Air 256 Blue",
+    "price": 70700,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Air 256 Gold",
+    "price": 71000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 256 Gold",
+    "price": 67500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 256 White",
+    "price": 74000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 256 White",
+    "price": 71500,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "Air 256 Black",
+    "price": 78000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 256 Black",
+    "price": 72200,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 512 Bluе",
+    "price": 82900,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 512 Gold",
+    "price": 81500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 512 White",
+    "price": 87900,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 512 Black",
+    "price": 88200,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 1TB Blue",
+    "price": 95500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 1TB Gold",
+    "price": 96500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 1TB White",
+    "price": 107500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 1TB Black",
+    "price": 104500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "Air 1TB Black",
+    "price": 99500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "+3 месяца",
+    "price": 4000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+6 месяцев",
+    "price": 7000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "+12 месяцев",
+    "price": 11000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "20w",
+    "price": 1800,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 10шт",
+    "price": 1350,
+    "flag": "🇪🇺",
+    "comment": ""
+  },
+  {
+    "name": "От 30шт",
+    "price": 1300,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 100 шт",
+    "price": 1250,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "От 200 шт",
+    "price": 1100,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Dual USB -C Port 35W",
+    "price": 7000,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (1м) 25w",
+    "price": 4500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Зарядка Apple MagSafe (2м) 25w",
+    "price": 5500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "Чехлы Pitaka 17/17pro",
+    "price": 8500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "",
+    "price": 20500,
+    "flag": "",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Silver",
+    "price": 103900,
+    "flag": "🇰🇼",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Silver",
+    "price": 91300,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Silver",
+    "price": 88500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Orange",
+    "price": 99900,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Orange",
+    "price": 98500,
+    "flag": "🇭🇰",
+    "comment": "2 sim"
+  },
+  {
+    "name": "17 Pro 256 Orange",
+    "price": 89300,
+    "flag": "🇨🇳",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Orange",
+    "price": 86600,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Blue",
+    "price": 102500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 256 Blue",
+    "price": 95000,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 512 Silver",
+    "price": 129000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 512 Silver",
+    "price": 117500,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 512 Orange",
+    "price": 121000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 512 Orange",
+    "price": 108700,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 512 Blue",
+    "price": 132500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 512 Blue",
+    "price": 116000,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 512 Blue",
+    "price": 108500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 1TB Silver",
+    "price": 148500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 1TB Silver",
+    "price": 137500,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 1TB Orange",
+    "price": 138000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 1TB Orange",
+    "price": 123500,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 1TB Orange",
+    "price": 120500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 1TB Blue",
+    "price": 149000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro 1TB Blue",
+    "price": 129000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 256 Silver",
+    "price": 109800,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 256 Silver",
+    "price": 102500,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 256 Orange",
+    "price": 108400,
+    "flag": "🇺🇸",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 256 Orange",
+    "price": 99500,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 256 Blue",
+    "price": 109200,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 256 Blue",
+    "price": 105000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 256 Blue",
+    "price": 98500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 512 Silver",
+    "price": 131000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 512 Silver",
+    "price": 120700,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 512 Orange",
+    "price": 127500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 512 Orange",
+    "price": 118000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 512 Blue",
+    "price": 135000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 512 Blue",
+    "price": 116700,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 1TB Silver",
+    "price": 158500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 1TB Silver",
+    "price": 145500,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 1TB Orange",
+    "price": 158000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 1TB Orange",
+    "price": 141000,
+    "flag": "🇸🇬",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 1TB Blue",
+    "price": 160000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 1TB Blue",
+    "price": 137500,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 2TB Silver",
+    "price": 204000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 2TB Silver",
+    "price": 175000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 2TB Orange",
+    "price": 186000,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 2TB Orange",
+    "price": 175000,
+    "flag": "🇭🇰",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 2TB Blue",
+    "price": 184500,
+    "flag": "🇯🇵",
+    "comment": ""
+  },
+  {
+    "name": "17 Pro Max 2TB Blue",
+    "price": 164000,
+    "flag": "🇭🇰",
+    "comment": ""
+  }
+]

@@ -1,3 +1,5 @@
+# класс нужен просто для удобства обращения, написан криво и архитектурно неправильно
+
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -7,13 +9,13 @@ class Parser:
         self.url = url
 
     @staticmethod
-    def parse_line(line):
+    def parse_line(line: str) -> dict:
+        """Разбирает строчку на части"""
         if len(line) < 5:
             return {'product': '', 'price': '', 'flag': ''}
         
         line = line.strip()
-        
-        # Цена всегда в конце
+
         price_match = re.search(r'-?\d{1,}\.?\d*/?\d*\*?$', line)
         if price_match:
             price = price_match.group(0)
@@ -30,7 +32,8 @@ class Parser:
         }
 
 
-    def get_page(self):
+    def get_page(self) -> str | None:
+        """Вытаскивает HTML-код страницы"""
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         }
@@ -46,7 +49,8 @@ class Parser:
             return None
         
     @staticmethod
-    def extract_text(html):
+    def extract_text(html: str) -> str | None:
+        """Вытаскивает текст из нужной части страницы"""
         soup = BeautifulSoup(html, 'lxml')
 
         message = soup.find('div', class_='tgme_widget_message_text')
@@ -54,15 +58,12 @@ class Parser:
             return message.get_text(separator='\n', strip=True)
         return None
 
-def handle_dict(raw_dict):
-    #ToDo заебашить нормальную обработку
+def handle_dict(raw_dict: dict) -> dict:
+    """Обрабатывает сырой словарь для вывода цены в нормальном виде"""
     clear_dict = {}
     for key, value in raw_dict.items():
-        if key == 'price' and value:  # Проверяем что цена не пустая
-            # Убираем все кроме цифр
+        if key == 'price' and value:
             price_digits = ''.join(char for char in value if char.isdigit())
-
-            # Преобразуем в int (если есть цифры)
             clear_dict[key] = int(price_digits) if price_digits else 0
         else:
             clear_dict[key] = value
@@ -70,6 +71,7 @@ def handle_dict(raw_dict):
     return clear_dict
 
 def main():
+    """Точка входа в программу"""
     url = 'https://t.me/BigSaleApple/11198?embed=1'
     parser = Parser(url)
     print('Получаем HTML')

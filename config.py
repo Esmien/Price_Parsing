@@ -6,11 +6,11 @@ from pathlib import Path
 load_dotenv()
 
 # --- Настройки Google ---
-CREDENTIALS_FILE = os.getenv('CREDENTIALS_FILE', 'credentials.json')
-SPREADSHEET_TITLE = os.getenv('SPREADSHEET_TITLE', 'ApplePrices')
+CREDENTIALS_FILE = os.getenv('CREDENTIALS_FILE')
+SPREADSHEET_TITLE = os.getenv('SPREADSHEET_TITLE')
 
 # --- Настройки Парсера ---
-# { "Имя Листа и Файла": "Ссылка" }
+# {"Имя Листа": ["Ссылки"]}
 URL_MAP = {
     "Huawei": [
         "https://t.me/BigSaleApple/11193?embed=1"

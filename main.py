@@ -1,4 +1,4 @@
-from config import URL_MAP, SPREADSHEET_TITLE, CREDENTIALS_FILE
+from config import URL_MAP, SPREADSHEET_TITLE, CREDENTIALS_FILE, BACKUP_DIR
 from network import TelegramClient, GoogleSheetsClient
 from parsing import TextExtractor, PriceParser
 from storage import IOFile
@@ -53,7 +53,7 @@ class App:
                 print(f"✅ Итого для '{sheet_name}': {len(category_products)} позиций.")
                 
                 # 1. Сохраняем JSON (Samsung.json будет содержать всё сразу)
-                json_filename = f".\\storage\\{sheet_name}.json"
+                json_filename = BACKUP_DIR / f"{sheet_name}.json"
                 IOFile(json_filename).write_file(category_products)
                 
                 # 2. Отправляем в Google (на ОДИН лист все сразу)

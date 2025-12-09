@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from pathlib import Path
 
 # Загружаем .env
 load_dotenv()
@@ -33,3 +34,6 @@ URL_MAP = {
 }
 
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+
+BACKUP_DIR = Path('storage')
+BACKUP_DIR.mkdir(exist_ok=True)

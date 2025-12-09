@@ -12,7 +12,7 @@ class App:
         self.parser = PriceParser()
 
     def run(self):
-        print(f"🚀 Запуск парсера Apple Parser v2.2 (Multi-Link Support)")
+        print(f"🚀 Запуск парсера")
         print(f"📄 Целевая таблица: {SPREADSHEET_TITLE}")
         
         is_gs_connected = self.gs_client.connect()
